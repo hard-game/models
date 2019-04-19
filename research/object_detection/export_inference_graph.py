@@ -116,13 +116,13 @@ flags.DEFINE_string('input_shape', None,
                     'dimensions. If not specified, for an `image_tensor, the '
                     'default shape will be partially specified as '
                     '`[None, None, None, 3]`.')
-flags.DEFINE_string('pipeline_config_path', None,
+flags.DEFINE_string('pipeline_config_path', 'D:\\VSCode\\models\\research\\object_detection\\sldata\\config\\ssd_mobilenet_v1_coco_2018_01_28.config',
                     'Path to a pipeline_pb2.TrainEvalPipelineConfig config '
                     'file.')
-flags.DEFINE_string('trained_checkpoint_prefix', None,
+flags.DEFINE_string('trained_checkpoint_prefix', 'D:\\VSCode\\models\\research\\object_detection\\sldata\\training\\ssd_mobilenet_v1_coco_2018_01_28\\model.ckpt-20000',
                     'Path to trained checkpoint, typically of the form '
                     'path/to/model.ckpt')
-flags.DEFINE_string('output_directory', None, 'Path to write outputs.')
+flags.DEFINE_string('output_directory', 'D:\\VSCode\\models\\research\\object_detection\\sldata\\model\\ssd_mobilenet_v1_coco_2018_01_28', 'Path to write outputs.')
 flags.DEFINE_string('config_override', '',
                     'pipeline_pb2.TrainEvalPipelineConfig '
                     'text proto to override pipeline_config_path.')
